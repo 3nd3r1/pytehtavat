@@ -2,7 +2,10 @@
 
 Ohjelma tekee kaikki Djamalin sanoma pro tehtävät
 
-TODO:
-- Sanomapro session
-- Tehtävien täyttö ja lähetys
+--> Selenium ja bs4
 
+TODO:
+- Login (X)
+- Get answers ()
+- Write answers ()
+- Send answers ()

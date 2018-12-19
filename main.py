@@ -1,29 +1,32 @@
+from selenium import webdriver
 from bs4 import BeautifulSoup
-import requests
+import time
 
-s = requests.Session()
+def SanomaProLogin():
+    url = "https://kirjautuminen.sanomapro.fi/sso/XUI/#login/&realm=%2Fratkoo"
+    username = "-"
+    password = "-"
 
-def getUserCookies():
-    cookies = {
-    'dancer.session':'521062877299624071118135967688004881',
-    'lang':'fi',
-    '_ga':'GA1.2.508072976.1544784292',
-    '_gid':'GA1.2.1900992478.1544784292',
-    '__zlcmid':'prhrg7Wt3yrruR'
-    }  
-    tiedot = {
-    'username':'LTI8HCaHcZ',
-    'password':'-',
-    'path':'',
-    'lang':'',
-    'org_short':'',
-    'auth_method':''
-    }
-    return cookies,tiedot
-cookies,tiedot = getUserCookies()
-s.post("http://vw4.viope.com/login", data=tiedot)
-r = s.get("https://vw4.viope.com/student/6314/#/content")
+    d = webdriver.Chrome("chromedriver.exe")
 
+    #Wait because the page has a load.
+    d.get(url)
+    d.implicitly_wait(5)
+    
+    d.find_element_by_id("username").send_keys(username)
+    d.find_element_by_id("password").send_keys(password)
+    d.find_element_by_id("loginButton_0").click()
+    d.implicitly_wait(5)
 
+    d.get("https://oppimisymparisto.sanomapro.fi/d2l/le/content/custom/1545693/57176258/Viewer")
+    d.implicitly_wait(5)
+    d.get("https://vw4.viope.com/student/6314/#/content")
+    
+    d.implicitly_wait(5)
+    time.sleep(5)
+    bs = BeautifulSoup(d.page_source,"html.parser")
+    for x in bs.find_all("span",{"class":"test-exe"}):
+        print(x.text)
+    
+SanomaProLogin()
 
-print(r.cookies)

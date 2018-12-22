@@ -6,6 +6,10 @@ Ohjelma tekee kaikki Djamalin sanoma pro tehtävät
 
 TODO:
 - Login (X)
-- Get answers ()
-- Write answers ()
-- Send answers ()
+- Get answers (x)
+- Write answers (x)
+- Send answers (x)
+- Debugging for better performance()
+- User interface ()
+- Debugging everything ()
+

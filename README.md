@@ -1,6 +1,6 @@
 # Python tehtävät
 
-Ohjelma tekee kaikki Djamalin sanoma pro tehtävät
+Ohjelma tekee kaikki Djamalin sanomapro tehtävät
 
 --> Selenium ja bs4
 

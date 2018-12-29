@@ -41,11 +41,13 @@ def saveAnswers(username, password):
 
 
     #Get 4 divs and use the second
+    
     divit = []
     for x in bs.find_all("div",{"class":"course_expanded"}):
         for y in x.find_all("div",{"ng-repeat":"type in ex_types","class":"ng-scope"}):
             divit.append(y)
     with open("answers.txt","a") as fp:
+        
         for y in range(1,len(divit),4):
             for x in divit[y].find_all("span",{"class":"test-exe"}):
                 if("Random" in x["title"].split(".")[0]):
@@ -92,8 +94,13 @@ def getAnswers():
     with open("answers.txt","r") as fp:
         return fp.read().split(";")
            
-def doExercises(username,password):
+def doExercises(username,password,valinta):
     ribs = getAnswers()
+
+
+    #Ribs on [title, koodi]
+
+    
     for a in range(len(ribs)-1):
         vips = ribs[a].split("\n")
         kips = vips[0]
@@ -112,7 +119,7 @@ def doExercises(username,password):
     for x in bs.find_all("div",{"class":"course_expanded"}):
         for y in x.find_all("div",{"ng-repeat":"type in ex_types","class":"ng-scope"}):
             divit.append(y)
-    action_chains = ActionChains(d)
+    
             
     for y in range(1,len(divit),4):
         for x in divit[y].find_all("span",{"class":"completion-not-started"}):
@@ -135,27 +142,41 @@ def doExercises(username,password):
                 
             for a in range(0,len(ribs)-1):
                 if (x["title"] in ribs[a]):
-                    d.implicitly_wait(10)
-                    codeMirror = d.find_element_by_class_name("CodeMirror")
+                    action_chains = ActionChains(d)
+                    codeMirror = WebDriverWait(d, 10).until(
+                    EC.presence_of_element_located((By.CLASS_NAME, 'CodeMirror'))
+                    )
                     action_chains.click(codeMirror).perform()
-                    action_chains.send_keys(ribs[a][1].replace("\xa0","")).perform()
+
+                    print(ribs[a])
+                    action_chains.send_keys(ribs[a][1].replace("\xa0","").replace("    ","")).perform()
+
+                    if(valinta == "r"):
+                        exa = '//button[contains(text(), "Run")]'
+                        d.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                     
-                    exa = '//button[contains(text(), "Run")]'
-                    d.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                        element = WebDriverWait(d, 10).until(
+                        EC.element_to_be_clickable((By.XPATH, exa))
+                        )
+                        element.click()
                     
-                    element = WebDriverWait(d, 10).until(
-                    EC.element_to_be_clickable((By.XPATH, exa))
-                    )
-                    element.click()
+                        exa = '//button[contains(text(), "Submit")]'
+                        d.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                     
-                    exa = '//button[contains(text(), "Submit")]'
-                    d.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                        element = WebDriverWait(d, 10).until(
+                        EC.element_to_be_clickable((By.XPATH, exa))
+                        )
+                        element.click()
+                    else:
+                        exa = '//button[contains(text(), "Save")]'
+                        d.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                     
-                    element = WebDriverWait(d, 10).until(
-                    EC.element_to_be_clickable((By.XPATH, exa))
-                    )
-                    element.click()
-            d.get("https://vw4.viope.com/student/6314/#/content")
+                        element = WebDriverWait(d, 10).until(
+                        EC.element_to_be_clickable((By.XPATH, exa))
+                        )
+                        element.click()
+
+                    d.get("https://vw4.viope.com/student/6314/#/content")
             
                     
                 
@@ -167,7 +188,8 @@ def doExercises(username,password):
     
 
 def Main():
-    #:)
+    #doExercises("","","r")
+    #saveAnswers("","")
         
 
 Main()

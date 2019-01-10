@@ -26,3 +26,33 @@
 [1223/172110.736:ERROR:exception_snapshot_win.cc(88)] thread ID 13760 not found in process
 [1223/172119.394:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
 [1223/172119.395:ERROR:exception_snapshot_win.cc(88)] thread ID 13432 not found in process
+[0107/114424.401:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0107/114424.415:ERROR:exception_snapshot_win.cc(88)] thread ID 12160 not found in process
+[0107/114424.425:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0107/114424.434:ERROR:exception_snapshot_win.cc(88)] thread ID 3676 not found in process
+[0109/134519.080:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0109/134519.084:ERROR:exception_snapshot_win.cc(88)] thread ID 17540 not found in process
+[0109/134519.139:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0109/134519.147:ERROR:exception_snapshot_win.cc(88)] thread ID 17752 not found in process
+[0110/103543.611:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0110/103543.611:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0110/103543.612:ERROR:exception_snapshot_win.cc(88)] thread ID 14556 not found in process
+[0110/103543.612:ERROR:exception_snapshot_win.cc(88)] thread ID 15000 not found in process
+[0110/104229.209:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0110/104229.209:ERROR:exception_snapshot_win.cc(88)] thread ID 6064 not found in process
+[0110/113259.749:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0110/113259.749:ERROR:exception_snapshot_win.cc(88)] thread ID 5768 not found in process
+[0110/113259.810:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0110/113259.814:ERROR:exception_snapshot_win.cc(88)] thread ID 15600 not found in process
+[0110/124935.781:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0110/124935.802:ERROR:exception_snapshot_win.cc(88)] thread ID 17004 not found in process
+[0110/124935.793:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0110/124935.849:ERROR:exception_snapshot_win.cc(88)] thread ID 9336 not found in process
+[0110/125755.961:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0110/125755.962:ERROR:exception_snapshot_win.cc(88)] thread ID 6864 not found in process
+[0110/125755.991:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0110/125756.013:ERROR:exception_snapshot_win.cc(88)] thread ID 4244 not found in process
+[0110/134152.944:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0110/134152.945:ERROR:exception_snapshot_win.cc(88)] thread ID 10556 not found in process
+[0110/135238.101:ERROR:process_reader_win.cc(123)] NtOpenThread: {Käyttö estetty} Prosessi pyysi objektin käyttöä, mutta käyttöoikeuksia ei ole myönnetty. (0xc0000022)
+[0110/135238.103:ERROR:exception_snapshot_win.cc(88)] thread ID 16228 not found in process

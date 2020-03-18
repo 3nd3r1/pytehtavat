@@ -1,6 +1,7 @@
 # Python tehtävät
 
-Ohjelma tekee kaikki Djamalin sanomapro tehtävät
+Our teacher made our class do python algorithm tasks and that gave a negative image of programming so I rebelled.
+I showed our class what "fun" programming is and made a program that copied all my answers to their sanoma account.
 
 --> Selenium ja bs4
 

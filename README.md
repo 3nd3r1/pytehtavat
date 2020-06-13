@@ -1,7 +1,6 @@
 # Python tehtävät
 
-Our teacher made our class do python algorithm tasks and that gave a negative image of programming so I rebelled.
-I showed our class what "fun" programming is and made a program that copied all my answers to their sanoma account.
+One of my first python projects (code is what you'd expect)! A selenium and bs4 program that copies and submits all of your viope excercises. I keep this in here mostly for the sentimental value.
 
 --> Selenium ja bs4
 
